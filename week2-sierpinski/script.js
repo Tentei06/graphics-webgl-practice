@@ -65,7 +65,7 @@ void main() {
     gl_PointSize = 1.0;
     
     // convert the 2D position into clip-space coordinates
-    gl_Position = vec4(aPosition, 0.0, 1.0):
+    gl_Position = vec4(aPosition, 0.0, 1.0);
 }
 `;
 
