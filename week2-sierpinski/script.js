@@ -121,3 +121,19 @@ for (let i = 0; i < numberOfPoints; i++) {
     points.push(p[0], p[1]);
 }
 
+// =====================================
+// Create Vertex Buffer Object (VBO)
+// =====================================
+
+// Create a buffer on the GPU
+const buffer = gl.createBuffer();
+
+// Make this the active buffer
+gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+
+// Transfer generated point data to GPU memory
+gl.bufferData(
+    gl.ARRAY_BUFFER,
+    new Float32Array(points),
+    gl.STATIC_DRAW
+);
