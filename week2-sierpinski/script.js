@@ -61,8 +61,8 @@ const vertexShaderSource = `
 attribute vec2 aPosition;
 
 void main() {
-    // size of each rendered point
-    gl_PointSize = 1.0;
+    // size of each rendered point (originally 1.0) // changed to 2.0 for test runs 
+    gl_PointSize = 2.0;
     
     // convert the 2D position into clip-space coordinates
     gl_Position = vec4(aPosition, 0.0, 1.0);
