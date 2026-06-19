@@ -78,8 +78,8 @@ const fragmentShaderSource = `
 precision mediump float;
 
 void main() {
-    // White points
-    gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+    // White points -- original // changed to Green for tests
+    gl_FragColor = vec4(0.0, 1.0, 0.0, 1.0);
 }
 `;
 
