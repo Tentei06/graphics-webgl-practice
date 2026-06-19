@@ -137,3 +137,23 @@ gl.bufferData(
     new Float32Array(points),
     gl.STATIC_DRAW
 );
+
+// =====================================
+// Configure Vertex Attributes
+// =====================================
+
+// Find the location of the aPosition attribute in the vertex shader
+const positionLocation = gl.getAttribLocation(program, "aPosition");
+
+// Tell WebGL how to read the position data from the buffer
+gl.vertexAttribPointer(
+    positionLocation,
+    2,          // each point has 2 values: x and y
+    gl.FLOAT,   // data type
+    false,      // do not normalize
+    0,          // stride
+    0           // offset
+);
+
+// Enable the aPosition attribute
+gl.enableVertexAttribArray(positionLocation);
