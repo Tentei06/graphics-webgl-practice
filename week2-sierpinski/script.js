@@ -83,3 +83,41 @@ void main() {
 }
 `;
 
+// =====================================
+// Generate Sierpinski Points
+// =====================================
+
+// Array that will store all generated x/y point coordinates
+const points = [];
+
+// three vertices of the main triangle
+const vertices = [
+    [-0.8, -0.8],
+    [0.0, 0.8],
+    [0.8, -0.8],
+];
+
+// start with an initial point inside the triangle 
+let p = [0.0,0.0];
+
+// number of points to generate
+const numberOfPoints = 5000;
+
+// Repeatedly move halfway toward a randomly selected vertex
+// This creates the Sierpinski Gasket pattern over time
+for (let i = 0; i < numberOfPoints; i++) {
+
+    // choose one of the three triangle vertices at random
+    const randomIndex = Math.floor(Math.random() * 3);
+    const selectedVertex = vertices[randomIndex];
+
+    // move halfway from the current point toward the selected vertex
+    p = [
+        (p[0] + selectedVertex[0]) / 2,
+        (p[1] + selectedVertex[1]) / 2
+    ];
+
+    // store the generated point
+    points.push(p[0], p[1]);
+}
+
