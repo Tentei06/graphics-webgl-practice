@@ -157,3 +157,20 @@ gl.vertexAttribPointer(
 
 // Enable the aPosition attribute
 gl.enableVertexAttribArray(positionLocation);
+
+// =====================================
+// Render Gasket
+// =====================================
+
+// Set the canvas background color to black
+gl.clearColor(0.0, 0.0, 0.0, 1.0);
+
+// Clear the canvas before drawing
+gl.clear(gl.COLOR_BUFFER_BIT);
+
+// Draw the generated points as the primitive type POINTS
+gl.drawArrays(
+    gl.POINTS,
+    0,
+    numberOfPoints
+);
