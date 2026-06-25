@@ -1,45 +1,63 @@
 # Graphics WebGL Practice
 
-A collection of small WebGL exercises created while learning computer graphics concepts, including canvas setup, shaders, GPU buffers, and procedural point rendering.
+> **Course:** CSC405 - Graphics and Visualization  
+> **Focus:** WebGL • Computer Graphics • GPU Programming • Shader Development
 
-## Current Projects
+A collection of WebGL graphics programming exercises demonstrating foundational computer graphics concepts, including shader programming, GPU buffers, procedural rendering, and the modern graphics pipeline.
 
-### Week 2: Sierpinski Gasket
+This repository serves as a record of my work throughout a university-level Graphics and Visualization course. Each project focuses on a specific graphics concept while building a practical understanding of how applications communicate with the GPU to render interactive graphics.
 
-This project renders a Sierpinski Gasket using WebGL. It generates thousands of points by repeatedly moving halfway toward a randomly selected triangle vertex, then sends those points to the GPU using a Vertex Buffer Object.
+---
 
-## Concepts Practiced
+## Projects
 
-- HTML5 canvas setup
-- WebGL rendering context
-- Vertex and fragment shaders
-- Shader compilation and linking
-- Vertex Buffer Objects
-- GPU data transfer
-- Procedural point generation
-- 2D coordinate rendering
+### Sierpinski Gasket
 
-## Technologies Used
+Implements the classic **Sierpinski Gasket** using WebGL and the Chaos Game algorithm. Thousands of points are generated in JavaScript before being transferred to the GPU through a **Vertex Buffer Object (VBO)** for rendering.
 
-- HTML
-- CSS
+#### Concepts Demonstrated
+
+- HTML5 Canvas
+- WebGL Rendering Context
+- Vertex and Fragment Shaders
+- Shader Compilation and Linking
+- Vertex Buffer Objects (VBOs)
+- GPU Data Transfer
+- Procedural Point Generation
+- 2D Rendering Pipeline
+
+---
+
+## Technologies
+
+- HTML5
+- CSS3
 - JavaScript
 - WebGL
 
-## How to Run
+---
+
+## Running the Project
 
 1. Clone the repository.
-2. Open the project folder in VS Code.
-3. Use the Live Server extension.
-4. Open `index.html` or `week2-sierpinski/index.html` in the browser.
+2. Open the project in Visual Studio Code.
+3. Launch the project using the Live Server extension.
+4. Open `index.html` or `week2-sierpinski/index.html`.
 
-## What I Learned
+---
 
-This project helped me understand how WebGL separates CPU-side JavaScript logic from GPU-side rendering. JavaScript generates the point data, while shaders and buffers control how that data is displayed on the screen.
+## Key Takeaways
 
-## Future Improvements
+Through these exercises, I gained hands-on experience with the relationship between CPU-side JavaScript code and GPU-side rendering. Building these projects reinforced how shaders, buffers, and the graphics pipeline work together to efficiently render graphics on the screen.
 
-- Add more WebGL exercises as the course progresses
-- Add screenshots or GIFs of each project
-- Organize each weekly exercise into its own folder
-- Add comments explaining shader and buffer setup
+---
+
+## Future Work
+
+As this course progresses, additional graphics programming projects will be added, including:
+
+- 2D and 3D transformations
+- Interactive graphics
+- Lighting and shading techniques
+- Texture mapping
+- Additional WebGL rendering experiments
