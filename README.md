@@ -1,6 +1,5 @@
 # Graphics WebGL Practice
 
-> **Course:** CSC405 - Graphics and Visualization  
 > **Focus:** WebGL • Computer Graphics • GPU Programming • Shader Development
 
 A collection of WebGL graphics programming exercises demonstrating foundational computer graphics concepts, including shader programming, GPU buffers, procedural rendering, and the modern graphics pipeline.
